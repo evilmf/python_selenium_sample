@@ -6,8 +6,10 @@ Installation:
 5. install maven
 
 Running the Test:
-For windows: clean -Denv=chrome_win32 install
+For windows: clean -Denv=chrome_win32 test
 
-For mac osx: clean -Denv=chrome_mac64 install
+For mac osx: clean -Denv=chrome_mac64 test
 
-Note: Tested in Windows 10 with Chrome Version 53.0.2785.143 m only.  
+Note: 
+1. Tested in Windows 10 with Chrome Version 53.0.2785.143 m only.  
+2. Test XML report can be found at src/test/python/test-reports
