@@ -1,1 +1,4 @@
 /target/
+
+src/test/python/**/*.pyc
+src/test/python/test-reports/*.xml
