@@ -26,12 +26,11 @@ class BookTour(unittest.TestCase, BaseClassCustomer):
         invoicePage = InvoicePage(self.driver)
         
         #check if tour is booked successfully
-        self.assertEquals('Unpaid', invoicePage.unpaidElement())
+        self.assertEquals('Pay on Arrival', invoicePage.getPayOnArrivalButton())
          
     @classmethod                     
     def tearDownClass(self):
         self.driver.quit()
 
 if __name__ == "__main__":
-    import xmlrunner
-    unittest.main(testRunner=xmlrunner.XMLTestRunner(output='test-reports'))
+    unittest.main()
